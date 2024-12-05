@@ -1,6 +1,6 @@
 import re
 import math
-import getpass  # input password tersembunyi
+import getpass  
 
 class AdvancedPasswordStrengthChecker:
     def __init__(self):
@@ -67,7 +67,7 @@ class AdvancedPasswordStrengthChecker:
     
     def generate_detailed_feedback(self, password):
         """
-        Membuat feedback detail tentang kekuatan password
+        Mmbuat feedback detail tentang kekuatan password
         
         Returns:
             dict: Analisis komprehensif kekuatan password
@@ -91,7 +91,7 @@ class AdvancedPasswordStrengthChecker:
         
         # tingkat kekuatan
         if not is_length_valid:
-            strength = 'Sangat Lemah'
+            strength = 'Sangat amat Lemah'
             recommendation = f'Password kamu terlalu pendek. Minimal {self.min_length} karakter.'
         elif complexity['is_common_password']:
             strength = 'Sangat Lemah'
@@ -148,19 +148,19 @@ def main():
         pilihan = input("Masukkan pilihan (1/2): ")
         
         if pilihan == '1':
-            # Input password tersembunyi
-            password = getpass.getpass("Masukkan password Anda (akan disembunyikan): ")
+            # input password tersembunyi
+            password = getpass.getpass("Masukkan password kamu (akan disembunyikan): ")
             
-            # Analisis password
+            # menganalisis password
             result = checker.generate_detailed_feedback(password)
             checker.display_password_analysis(result)
         
         elif pilihan == '2':
-            print("Terima kasih. Sampai jumpa!")
+            print("Terima kasih. Sampai jumpa lagi yaa :)")
             break
         
         else:
-            print("Pilihan tidak valid. Silakan coba lagi.")
+            print("Pilihan tidak valid. Silakan coba lagi!.")
 
 if __name__ == "__main__":
     main()
