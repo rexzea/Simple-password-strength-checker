@@ -2,7 +2,7 @@
 
 ## 📋 Deskripsi Proyek
 
-**Advanced Password Strength Checker** adalah aplikasi Python yang dirancang untuk menganalisis dan mengevaluasi kekuatan password secara mendalam. proyek ini memberikan penilaian terhadap sebuah keamanan password dengan menggunakan berbagai metrik dan algoritma analisis dari pthon.
+**Password Strength Checker** adalah aplikasi Python yang dirancang untuk menganalisis dan mengevaluasi kekuatan password secara mendalam. proyek yang saya buat ini unntuk memberikan penilaian terhadap sebuah keamanan password dengan menggunakan berbagai metrik dan algoritma analisis dari pthon.
 
 ## ✨ Fitur Utama
 
