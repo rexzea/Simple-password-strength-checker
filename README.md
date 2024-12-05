@@ -47,7 +47,7 @@ python pwcheck.py
 
 1. Pilih "Periksa Kekuatan Password"
 2. Masukkan password
-3. Dapatkan analisis komprehensif
+3. Dapatkan analisis detailnya
 
 ## 📊 Metode Analisis
 
@@ -55,10 +55,10 @@ python pwcheck.py
 - Panjang Password
 - Kompleksitas Karakter
 - Entropi
-- Keunikan Password
+- Keunikan atau Kerumitan Password
 
 ### Tingkatan Kekuatan Password
-- 🔴 Sangat Lemah
+- 🔴 Sangat amat Lemah / Sangat Lemah
 - 🟠 Lemah
 - 🟡 Cukup Kuat
 - 🟢 Sangat Kuat
@@ -74,7 +74,7 @@ python pwcheck.py
 
 - Input password tersembunyi
 - Tidak menyimpan password
-- Analisis lokal tanpa transfer data
+- lokal dan tanpa transfer data
 
 ## 🔧 Kontribusi
 
@@ -86,7 +86,7 @@ python pwcheck.py
 
 ## 📜 Lisensi
 
-[Tentukan Lisensi Anda, misalnya MIT License]
+[@Rexzea]
 
 ## 👥 Pembuat
 
