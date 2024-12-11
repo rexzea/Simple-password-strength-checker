@@ -15,16 +15,9 @@ class AdvancedPasswordStrengthChecker:
         ]
     
     def check_length(self, password):
-        """Memeriksa panjang password"""
         return len(password), len(password) >= self.min_length
     
     def check_complexity(self, password):
-        """
-        Analisis kompleksitas password secara mendalam
-        
-        Returns:
-            dict: Detail kompleksitas password
-        """
         complexity_checks = {
             'has_uppercase': bool(re.search(r'[A-Z]', password)),
             'has_lowercase': bool(re.search(r'[a-z]', password)),
@@ -36,15 +29,6 @@ class AdvancedPasswordStrengthChecker:
         return complexity_checks
     
     def calculate_entropy(self, password):
-        """
-        Menghitung entropi password untuk mengukur kekacauan/keacakan
-        
-        Args:
-            password (str): Password yang akan diukur
-        
-        Returns:
-            float: Nilai entropi password
-        """
         # menentukan character
         character_sets = {
             'lowercase': len(set(c for c in password if c.islower())),
@@ -66,12 +50,6 @@ class AdvancedPasswordStrengthChecker:
         return round(entropy, 2)
     
     def generate_detailed_feedback(self, password):
-        """
-        Mmbuat feedback detail tentang kekuatan password
-        
-        Returns:
-            dict: Analisis komprehensif kekuatan password
-        """
         # periksa panjang
         password_length, is_length_valid = self.check_length(password)
         
@@ -120,7 +98,6 @@ class AdvancedPasswordStrengthChecker:
         }
     
     def display_password_analysis(self, analysis):
-        """Menampilkan analisis password secara visual"""
         print("\n--- Analisis Keamanan Password ---")
         print(f"Panjang Password: {analysis['password_length']} karakter")
         print(f"Tingkat Kekuatan: {analysis['strength']}")
